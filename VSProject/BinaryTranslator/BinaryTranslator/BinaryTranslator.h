@@ -3,18 +3,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
+#include <vector>
 
 
 using namespace std;
 
 class BinaryTranslator
 {
+public:
 	BinaryTranslator();
 	~BinaryTranslator();
-	string BinaryToEnglish(string binary);
-	string EnglishToBinary(string english);
-	
+	string BinaryToText(string binary);
+	string TextToBinary(string english);
+	string TextToHex(string english);
+	string HexToText(string hex);
 };
 
 

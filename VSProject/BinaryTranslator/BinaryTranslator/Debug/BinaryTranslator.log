@@ -1,0 +1,5 @@
+﻿  BinaryTranslator.cpp
+C:\Users\Adam\source\repos\BinaryTranslator\VSProject\BinaryTranslator\BinaryTranslator\BinaryTranslator.cpp(33,23): warning C4018: '<': signed/unsigned mismatch
+  main.cpp
+  Generating Code...
+  BinaryTranslator.vcxproj -> C:\Users\Adam\source\repos\BinaryTranslator\VSProject\BinaryTranslator\Debug\BinaryTranslator.exe

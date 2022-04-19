@@ -1,1 +1,0 @@
-C:\Users\Adam\source\repos\BinaryTranslator\VSProject\BinaryTranslator\TranslateTest\Debug\TranslateTest.vcxproj.CopyComplete

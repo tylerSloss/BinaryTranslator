@@ -159,30 +159,25 @@ string BinaryTranslator::BinaryToText(string binary) {
     return result;
 }
 
-string BinaryTranslator::TextToBinary(string english) {
+string BinaryTranslator::TextToBinary(string txt) {
+    int sLength = txt.length();
+    string result = "";
 
-    int sLength = english.length();
+    for (int i = 0; i <= sLength; i++) {
+        // convert each char to ASCII
+        int ascii = int(txt[i]);
 
-    for (int i = 0; i <= sLength; i++)
-    {
-        // convert each char to
-        // ASCII value
-        int val = int(english[i]);
-
-        // Convert ASCII value to binary
+        // Convert ASCII value to binary, store result
         string bin = "";
-        while (val > 0)
-        {
-            (val % 2) ? bin.push_back('1') :
+        while (ascii > 0) {
+            (ascii % 2) ? bin.push_back('1') :
                 bin.push_back('0');
-            val /= 2;
+            ascii /= 2;
         }
         reverse(bin.begin(), bin.end());
-
-        cout << bin;
+        result += bin;
     }
-
-    return string();
+    return result;
 }
 
 string BinaryTranslator::TextToHex(string english) {
@@ -195,9 +190,8 @@ string BinaryTranslator::TextToHex(string english) {
     return result.str();
 }
 
-string BinaryTranslator::HexToText(string hexIn) {
-
-    stringstream ss; 
-    ss << hex << hexIn;
+string BinaryTranslator::HexToText(string hx) {
+    stringstream ss;
+    ss << hex << hx;
     return ss.str();
 }
